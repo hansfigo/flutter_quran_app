@@ -1,15 +1,15 @@
 // To parse this JSON data, do
 //
-//     final welcome = welcomeFromJson(jsonString);
+//     final surah = surahFromJson(jsonString);
 
 import 'dart:convert';
 
-Welcome welcomeFromJson(String str) => Welcome.fromJson(json.decode(str));
+Surah surahFromJson(String str) => Surah.fromJson(json.decode(str));
 
-String welcomeToJson(Welcome data) => json.encode(data.toJson());
+String surahToJson(Surah data) => json.encode(data.toJson());
 
-class Welcome {
-    Welcome({
+class Surah {
+    Surah({
         this.number,
         this.sequence,
         this.numberOfVerses,
@@ -25,7 +25,7 @@ class Welcome {
     Revelation? revelation;
     Tafsir? tafsir;
 
-    factory Welcome.fromJson(Map<String, dynamic> json) => Welcome(
+    factory Surah.fromJson(Map<String, dynamic> json) => Surah(
         number: json["number"],
         sequence: json["sequence"],
         numberOfVerses: json["numberOfVerses"],
@@ -43,7 +43,6 @@ class Welcome {
         "tafsir": tafsir?.toJson(),
     };
 }
-
 class Name {
     Name({
         this.short,
