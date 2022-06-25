@@ -1,6 +1,6 @@
 # quran_app
 
-A new Flutter project.
+Untuk Portfolio + Memperdalam belajar Flutter, Dart dan API
 
 ## Getting Started
 
