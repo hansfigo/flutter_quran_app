@@ -39,7 +39,7 @@ class IntroductionView extends GetView<IntroductionController> {
                               )),
                           color: Colors.blue,
                           onPressed: () {
-                            Get.offNamed(Routes.HOME);
+                            Get.offNamed(Routes.SURAH_PAGE);
                           },
                           child: Text(
                             'Get Started',
